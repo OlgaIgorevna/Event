@@ -120,6 +120,7 @@ form.signup{
   padding: 70px 40px;
   text-align:center;
   box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
+  margin-bottom: 100px;
 }
 form.signup .title{
   display: inline-block;
@@ -168,8 +169,46 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   width:100%;
   margin: 50px 0;
 }
+.container{
+  width: 100%;
+  padding: 80px 10px 0;
+  box-sizing: border-box;
+}
+.details-icons .container .icon {
+  color: black;
+  text-align: center; /*действует на текст в вложенных блочных элементах?*/
+}
+.details-icons .container .icon img{
+  margin-bottom: 60px;
+}
+.details-icons .container .icon .title{  
+  font-size: 60px;
+  font-family: RobotoslabBold;  
+  margin-bottom: 60px;
+  text-transform: capitalize;
+}
+.details-icons .container .icon .text{  
+  font-size: 12px;
+  font-family: RobotoslabLight;
+ 
+}
 
-
+/*END DETAILS-ICONS------------------------------------*/
+@media (min-width: 1024px) {    
+  .details-icons .container{                             
+        width:33%;
+        padding: 0 40px;
+        float:left;
+    }
+  .details-icons .container .icon .title{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .details-icons .container .icon img{
+     margin-bottom: 20px;
+  }
+     
+}
 .clearfix::after {
   content: "";
   display: table;
