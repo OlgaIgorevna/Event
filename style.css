@@ -194,6 +194,68 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
 }
 
 /*END DETAILS-ICONS------------------------------------*/
+
+table {
+  font-size: 35px;
+  color:white;
+  font-family: RobotoslabRegular;
+  text-align: left;
+  border-radius: 20px;
+  overflow: hidden;
+  border-collapse: collapse;
+  margin: 100px 0;
+}
+table td,th{
+  height: 150px;
+  padding: 30px;
+}
+
+
+td:first-child{
+  width:30%;
+  text-align: center;
+  
+}
+td:second-child{
+  width:40%;
+  
+}
+td:third-child{
+  font-size: 100px;
+  width:20%;
+  
+}
+table button{
+  width: 70px;
+  height:70px;
+  border-radius: 50px;
+  background-color: white;  
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+table tr:nth-child(odd) button{color: #373737;}
+table tr:nth-child(even) button{color: #4b4d4f;}
+
+tr:nth-child(odd){
+  background-color: #373737;
+}
+tr:nth-child(even){
+  background-color: #4b4d4f;
+}
+table thead tr th{
+  font-size: 50px;
+  font-weight:bold;
+  text-align: left;
+  background-color: #a3cc40;
+}
+table thead tr th:first-child{ text-align: center;}
+
+
+
+
+
 @media (min-width: 1024px) {    
   .details-icons .container{                             
         width:33%;
@@ -206,6 +268,9 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   }
   .details-icons .container .icon img{
      margin-bottom: 20px;
+  }
+  .table{
+    width:100%;   
   }
      
 }
