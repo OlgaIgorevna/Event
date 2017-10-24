@@ -14,6 +14,10 @@
   font-family: RobotoslabBold;
   src: url(fonts/RobotoSlab-Bold.ttf) format("opentype");
 }
+
+
+
+
 .layout-positioner{
   padding: 0 50px;
 }
@@ -333,21 +337,33 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   width:100%;
   margin: 50px 0;
 }
-.speakers .galery img{
-  display: block;
+.speakers .galery .container img{
   width:100%;
   height: auto;
   margin: 50px 0;
 }
-
-@media (min-width: 768px){
-  .speakers .galery img{
-    display:inline-block; 
-    width:30%;
-  }
+.speakers .galery .container{
+  margin:0;
+  padding: 0;
 }
 
-@media (min-width: 1024px) {    
+
+
+@media (min-device-width: 768px){
+  .speakers .galery .container{
+    float:left;
+    width:33%;  
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .speakers .galery .container img{margin:0;}
+
+  .speakers .text{
+    width: 70%;
+  } 
+  
   .details-icons .container{                             
         width:33%;
         padding: 0 40px;
@@ -362,11 +378,8 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   }
   .table{
     width:100%;   
-  }
-     
+  }     
 }
-
-
 .clearfix::after {
   content: "";
   display: table;
