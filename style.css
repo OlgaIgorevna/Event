@@ -195,8 +195,8 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
 
 /*END DETAILS-ICONS------------------------------------*/
 
-table {
-  font-size: 35px;
+.timetable table {
+  font-size: 40px;
   color:white;
   font-family: RobotoslabRegular;
   text-align: left;
@@ -205,27 +205,24 @@ table {
   border-collapse: collapse;
   margin: 100px 0;
 }
-table td,th{
+.timetable table td,th{
   height: 150px;
   padding: 30px;
 }
 
 
-td:first-child{
-  width:30%;
-  text-align: center;
-  
+.timetable td:first-child{
+  width:33%;
+  text-align: center;  
 }
-td:second-child{
-  width:40%;
-  
+.timetable td:second-child{
+  width:50%;  
 }
-td:third-child{
+.timetable td:third-child{
   font-size: 100px;
-  width:20%;
-  
+  width:20%;  
 }
-table button{
+.timetable table button{
   width: 70px;
   height:70px;
   border-radius: 50px;
@@ -235,24 +232,88 @@ table button{
   text-align: center;
   vertical-align: top;
 }
-table tr:nth-child(odd) button{color: #373737;}
-table tr:nth-child(even) button{color: #4b4d4f;}
+.timetable table tr:nth-child(odd) button{color: #373737;}
+.timetable table tr:nth-child(even) button{color: #4b4d4f;}
 
-tr:nth-child(odd){
+.timetable tr:nth-child(odd){
   background-color: #373737;
 }
-tr:nth-child(even){
+.timetable tr:nth-child(even){
   background-color: #4b4d4f;
 }
-table thead tr th{
+.timetable table thead tr th{
   font-size: 50px;
   font-weight:bold;
   text-align: left;
   background-color: #a3cc40;
 }
-table thead tr th:first-child{ text-align: center;}
+.timetable table thead tr th:first-child{ text-align: center;}
+.timetable .text{
+  text-align: center;
+  font-size: 15px;
+  color:#777777;
+}
+ 
+/* END TIMETABLE-------------------------------------------*/
 
+.reward .title{
+  display: block;
+  font-family: RobotoslabBold;
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+.reward{
+  text-align: right;
+  color: white;
+  margin: 200px 0;
+  background: url(img/reward-bg-h.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 300px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.reward .text{
+  display: block;
+  font-size: 11px;
+  font-family: RobotoslabLight;
+  letter-spacing: 0.08;
+  font-weight: 600;
+}
+.reward p{
+  margin: 80px 0;
+}
+.reward button{
+  background-color: #90d23d;
+  color: white;
+  font-size: 50px;
+  width: 550px;
+  height:130px;
+  border-radius: 40px;
+}
 
+.reward::before {
+  content:"";
+  display:block;
+  position: absolute;
+  left:0;
+  top:0;
+	 width: 0;
+	 height: 0;
+	 border-top: 50px solid white; 
+	 border-right: 1000px solid transparent;			
+}
+.reward::after {
+  content:"";
+  display:block;
+  position: absolute;
+  right:0;
+  bottom:0;
+	 width: 0;
+	 height: 0;
+	 border-bottom: 50px solid white; 
+	 border-left: 1000px solid transparent;			
+}
 
 
 
