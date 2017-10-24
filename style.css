@@ -325,6 +325,7 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   display:block;
   margin-bottom: 50px;
   font-family: RobotoslabBold;
+  font-size: 60px;
   
 }
 .speakers .text{
@@ -347,7 +348,66 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   padding: 0;
 }
 
+/*END SPEAKERS--------------------------------------*/
 
+.sponsor{
+  text-align: center;
+  margin-bottom: 100px;
+  background: url(img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:white;
+  padding: 100px 0;
+  box-sizing: border-box;
+  position: relative; 
+  width: 100%;
+}
+
+.sponsor .title{
+  font-family: RobotoslabBold;
+  display:block;
+  font-size: 60px;  
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+.sponsor .text{
+  display: block;
+  font-size: 11px;
+  font-family: RobotoslabLight;
+  font-weight: 600;
+  z-index: 2;
+}
+.sponsor::before {
+  content:"";
+  display:block;
+  position: absolute;
+  left:0;
+  top:0;
+	 width: 0;
+	 height: 0;
+	 border-top: 50px solid white; 
+	 border-right: 1000px solid transparent;			
+}
+.sponsor::after {
+  content:"";
+  display:block;
+  position: absolute;
+  right:0;
+  bottom:0;
+	 width: 0;
+	 height: 0;
+	 border-bottom: 50px solid white; 
+	 border-left: 1000px solid transparent;			
+}
+.sponsor .badges .img{
+  display: inline-block;
+  width:30%;    
+}
+.sponsor .badges {text-align: center;}
+
+/*MEDIA---------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------*/
 
 @media (min-device-width: 768px){
   .speakers .galery .container{
