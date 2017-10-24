@@ -315,7 +315,37 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
 	 border-left: 1000px solid transparent;			
 }
 
+/*END REWARD---------------------------------------*/
 
+.speakers .title{
+  display:block;
+  margin-bottom: 50px;
+  font-family: RobotoslabBold;
+  
+}
+.speakers .text{
+  display: block;
+  font-family: RobotoslabLight;
+  font-size: 13px;
+}
+
+.speakers .galery {
+  width:100%;
+  margin: 50px 0;
+}
+.speakers .galery img{
+  display: block;
+  width:100%;
+  height: auto;
+  margin: 50px 0;
+}
+
+@media (min-width: 768px){
+  .speakers .galery img{
+    display:inline-block; 
+    width:30%;
+  }
+}
 
 @media (min-width: 1024px) {    
   .details-icons .container{                             
@@ -335,6 +365,8 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   }
      
 }
+
+
 .clearfix::after {
   content: "";
   display: table;
