@@ -16,25 +16,6 @@
 }
 
 
-
-title{
-   font-size: 30px;
-   font-family: RobotoslabBold;  
-   display: block;
-   margin-bottom: 30px;
-   text-transform: capitalize;
- }
- .text{
-   display: block;
-   font-size: 13px;
-   font-family: RobotoslabLight;
- }
- .left{text-align: left;}
- .right{text-align: right;}
- .center{text-align: center;}
- 
-
-
 .layout-positioner{
   padding: 0 10px; 
 }
@@ -298,8 +279,6 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
  
 /* END TIMETABLE-------------------------------------------*/
 
-
-  
 
 .reward{
   text-align: right;
