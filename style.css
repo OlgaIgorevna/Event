@@ -19,44 +19,62 @@
 
 
 .layout-positioner{
-  padding: 0 50px;
+  padding: 0 10px; 
 }
+.title{
+  font-size: 30px;
+  font-family: RobotoslabBold;  
+  display: block;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.text{
+  display: block;
+  font-size: 13px;
+  font-family: RobotoslabLight;
+}
+.left{text-align: left;}
+.right{text-align: right;}
+.center{text-align: center;}
+
 .header{
   box-sizing: border-box;
   width:100%;
-  height: 500px;
+  height: 150px;
   background: url("img/hero-bg.jpg") no-repeat;
-  background-size: cover; /*как сместить background при том, что надо еще картинку увеличить и чтобы только ее часть была на экране?*/    
-  padding: 50px 0;   
-  overflow: hidden;
+  background-size: cover; /*как сместить background при том, что надо еще картинку увеличить и чтобы только ее часть была на экране?*/  
+  background-position: center;
+  padding: 5px 0 0;     
   position: relative;
+  overflow: hidden;
 }
 .logo{
   position:relative;
   float:left;
 }
 .logo img{
-  width: 400px;
+  width: 120px;
 }
 .header .logo span{
   display:block;
   position:absolute; 
-  left: 135px;
-  top:70px;
+  left: 35px;
+  top:23px;
   color: #82b541;
-  font-size:30px;
-  letter-spacing: 3;
+  font-size:10px;
+  letter-spacing: 1;
   text-transform: uppercase;
   font-family: RobotoslabRegular;  
 }
 .menu-button { 
-    float: right;   
-    font-size: 60px;
+    float: right; 
+    margin-right: 10px;
+    font-size: 20px;
     color: white;
 }
 .header .layout{
   width:100%;
-  padding:50px;
+  padding:10px 10px 0;
   box-sizing: border-box;
   clear:both;
   text-align: center;
@@ -64,11 +82,12 @@
 .time{  
   display: inline-block;
   box-sizing: border-box;
-  border: 5px solid #82b541;
-  border-radius: 40px;
-  width: 750px;
-  height: 120px;
-  padding:10px;
+  border: 2px solid #82b541;
+  border-radius: 15px;
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  margin: 10px 0 0 0;
   font-family: RobotoslabRegular;
   text-align: center;
 }
@@ -77,72 +96,74 @@
   width: 20%;  
   color:white;
   text-transform: uppercase;
-  font-size: 30px;
-   margin: 0 15px;
+  font-size: 10px;
+   margin: 0 5px;
 }
 
 .block .numeral{
-  font-size: 40px;
+  font-size: 10px;
+  display: block;
 }
 .t{
-  font-size: 60px;
+  font-size: 20px;
   color:white;
   display: inline-block;
   vertical-align: top;
 
 }
 .badges{
+  margin-top: 20px;
+/*
   position: absolute;
-  bottom: -15px;
-  left: 80px;
+  bottom: -5px;
+  left: 25px;
+*/
 }
 .badges img{
-  width: 135px;
+  width: 40px;
   height:auto;
-  margin: 0 15px; 
+  margin: 0 3% 0 0; 
 }
+.badges img:last-child{ margin-right: 0;}
 
 /*END HEADER----------------------------------------------------*/
 
 .welcome{
-  padding: 100px 0;
+  padding: 30px 0;
   color: black;
   font-family: RobotoslabLight;
   font-size: 13px;
 }
-.welcome .title{
-  font-size: 80px;
-  font-family: RobotoslabBold;    
-}
+
 .welcome p{
-  margin: 80px 0;
+  margin: 20px 0;
 }
 .welcome p span{
   font-weight: bold;
 }
 form.signup{
-  padding: 70px 40px;
+  padding: 20px;
   text-align:center;
   box-shadow: 5px 5px 30px rgba(0,0,0,0.5);
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 form.signup .title{
   display: inline-block;
-  font-size: 80px;
+  font-size: 25px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 form.signup input{
   
   display: block;
   width: 100%;
-  height: 150px;
-  border: 3px solid #bebebe;
-  border-radius: 10px;
-  margin: 50px 0;
+  height: 40px;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  margin: 15px 0;
   color: #bebebe;
-  padding: 0 30px;
-  font-size: 55px;  
+  padding: 0 10px;
+  font-size: 15px;  
 }
 form.signup button{
   background-color: #90d23d;
@@ -150,17 +171,17 @@ form.signup button{
   color: white;
   text-align: center;    
   display: inline-block;
-  font-size: 60px; 
+  font-size: 20px; 
   width: 100%;
-  height: 150px;
+  height: 40px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 form.signup .text{
   display: inline-block;
-  margin: 30px 0;
+  margin: 10px 0;
   color: #6c6c6c;
-  font-size: 50px;
+  font-size: 15px;
   width: 90%;  
 }
 
@@ -171,47 +192,47 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
 
 .details-icons{
   width:100%;
-  margin: 50px 0;
+  margin: 50px 0 10px;
 }
 .container{
   width: 100%;
-  padding: 80px 10px 0;
+  padding: 20px 5px 0;
   box-sizing: border-box;
+  margin: 20px 0;
 }
 .details-icons .container .icon {
   color: black;
   text-align: center; /*действует на текст в вложенных блочных элементах?*/
 }
 .details-icons .container .icon img{
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .details-icons .container .icon .title{  
-  font-size: 60px;
+  display: block;
+  font-size: 20px;
   font-family: RobotoslabBold;  
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   text-transform: capitalize;
 }
-.details-icons .container .icon .text{  
-  font-size: 12px;
-  font-family: RobotoslabLight;
- 
-}
+
 
 /*END DETAILS-ICONS------------------------------------*/
+.timetable{margin: 20px 0;}
 
 .timetable table {
-  font-size: 40px;
+  font-size: 13px;
   color:white;
   font-family: RobotoslabRegular;
   text-align: left;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   border-collapse: collapse;
-  margin: 100px 0;
+  margin: 20px 0;
+  width:100%;
 }
 .timetable table td,th{
-  height: 150px;
-  padding: 30px;
+  height: 50px;
+  padding: 10px;
 }
 
 
@@ -223,16 +244,16 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   width:50%;  
 }
 .timetable td:third-child{
-  font-size: 100px;
+  font-size: 20px;
   width:20%;  
 }
 .timetable table button{
-  width: 70px;
-  height:70px;
-  border-radius: 50px;
+  width: 30px;
+  height:30px;
+  border-radius: 15px;
   background-color: white;  
   font-weight: bold;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
   vertical-align: top;
 }
@@ -246,7 +267,7 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   background-color: #4b4d4f;
 }
 .timetable table thead tr th{
-  font-size: 50px;
+  font-size: 15px;
   font-weight:bold;
   text-align: left;
   background-color: #a3cc40;
@@ -254,48 +275,46 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
 .timetable table thead tr th:first-child{ text-align: center;}
 .timetable .text{
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   color:#777777;
 }
  
 /* END TIMETABLE-------------------------------------------*/
 
-.reward .title{
-  display: block;
-  font-family: RobotoslabBold;
-  font-size: 60px;
-  margin-bottom: 100px;
-}
+
+  
+
 .reward{
   text-align: right;
   color: white;
-  margin: 200px 0;
+  margin: 40px 0;
   background: url(img/reward-bg-h.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 300px 0;
+  padding: 100px 0;
   box-sizing: border-box;
   position: relative;
 }
+
+
 .reward .text{
-  display: block;
-  font-size: 11px;
-  font-family: RobotoslabLight;
-  letter-spacing: 0.08;
   font-weight: 600;
 }
 .reward p{
-  margin: 80px 0;
+  margin: 20px 0;
 }
-.reward button{
+button{
   background-color: #90d23d;
   color: white;
-  font-size: 50px;
-  width: 550px;
-  height:130px;
-  border-radius: 40px;
+  font-size: 20px;
+  width: 200px;
+  height:50px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
 }
 
+/*
 .reward::before {
   content:"";
   display:block;
@@ -304,8 +323,8 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   top:0;
 	 width: 0;
 	 height: 0;
-	 border-top: 50px solid white; 
-	 border-right: 1000px solid transparent;			
+	 border-top: 10px solid white; 
+	 border-right: 320px solid transparent;			
 }
 .reward::after {
   content:"";
@@ -315,33 +334,58 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   bottom:0;
 	 width: 0;
 	 height: 0;
-	 border-bottom: 50px solid white; 
-	 border-left: 1000px solid transparent;			
+	 border-bottom: 10px solid white; 
+	 border-left: 320px solid transparent;			
 }
+*/
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.wrap:before,
+.wrap:after{
+    transform-origin: center center;
+}
+.wrap:before {
+  content: " ";
+  position: absolute;
+  width: 200%;
+  height: 70px;
+  top: -30px;
+  left: -10px;
+  background: white;
+  transform: rotate(-3deg);
+  z-index: 5;
+}
+.wrap:after {
+  content: " ";
+  position: absolute;
+  width: 200%;
+  height: 70px;
+  bottom: 10px;
+  left: -10px;
+  background: white;
+  transform: rotate(-3deg);
+  z-index: 5;
+}
+
 
 /*END REWARD---------------------------------------*/
 
-.speakers .title{
-  display:block;
-  margin-bottom: 50px;
-  font-family: RobotoslabBold;
-  font-size: 60px;
-  
-}
-.speakers .text{
-  display: block;
-  font-family: RobotoslabLight;
-  font-size: 13px;
-}
+
 
 .speakers .galery {
   width:100%;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .speakers .galery .container img{
   width:100%;
   height: auto;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .speakers .galery .container{
   margin:0;
@@ -352,31 +396,21 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
 
 .sponsor{
   text-align: center;
-  margin-bottom: 100px;
+  margin: 40px 0;
   background: url(img/bg.jpg) no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   color:white;
   padding: 100px 0;
   box-sizing: border-box;
   position: relative; 
-  width: 100%;
 }
 
-.sponsor .title{
-  font-family: RobotoslabBold;
-  display:block;
-  font-size: 60px;  
-  margin-bottom: 50px;
-  text-transform: capitalize;
-}
+
 .sponsor .text{
-  display: block;
-  font-size: 11px;
-  font-family: RobotoslabLight;
   font-weight: 600;
-  z-index: 2;
 }
+/*
 .sponsor::before {
   content:"";
   display:block;
@@ -399,11 +433,34 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
 	 border-bottom: 50px solid white; 
 	 border-left: 1000px solid transparent;			
 }
-.sponsor .badges .img{
+*/
+.sponsor .badges img{
   display: inline-block;
-  width:30%;    
+  height: 30px;
+  width:auto;
+  margin: 0 10px 0 0;
 }
+.sponsor .badges img:last-child{height:15px;}
 .sponsor .badges {text-align: center;}
+
+/*END SPONSOR---------------------------------------------------*/
+
+.past{
+  text-align: center;
+}
+.past .galery img{
+  width:100%;
+  height: auto;
+  margin: 15px 0;
+}
+
+
+.past button{  
+ 
+  background: #373737;
+  margin-top: 10px;
+
+}
 
 /*MEDIA---------------------------------------------------------
 ----------------------------------------------------------------
@@ -426,19 +483,52 @@ form.signup input::-webkit-input-placeholder { color: #bebebe; }
   
   .details-icons .container{                             
         width:33%;
-        padding: 0 40px;
+        padding: 0 20px;
         float:left;
     }
   .details-icons .container .icon .title{
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   .details-icons .container .icon img{
-     margin-bottom: 20px;
+     margin-bottom: 10px;
   }
   .table{
     width:100%;   
-  }     
+  }   
+  .past{text-align: center;}
+  .past .text, .past .title{text-align: left;}  
+  .past .text{width:50%;}
+  
+  .past .galery {
+    font-size: 0;
+    max-width: 768px;
+    display: inline-block;
+    margin: 30px 0;
+  }
+  
+  .past .galery .container img{
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;    
+  }
+  .past .galery .container{
+    display:inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    padding:0;
+    margin:0;
+    height:250px;
+  }
+  .past .galery .container.big{
+    width:55%;   
+  }
+  .past .galery .container.small{
+    width:45%; 
+  }
+  
+
 }
 .clearfix::after {
   content: "";
