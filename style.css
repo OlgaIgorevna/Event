@@ -454,19 +454,16 @@ button{
   margin: 15px 0;
 }
 
-
 .past button{  
- 
   background: #373737;
-  margin-top: 10px;
-
+  margin-top: 10px
 }
 
 /*MEDIA---------------------------------------------------------
 ----------------------------------------------------------------
 ----------------------------------------------------------------*/
 
-@media (min-device-width: 768px){
+@media (min-width: 768px){
   .speakers .galery .container{
     float:left;
     width:33%;  
@@ -527,8 +524,11 @@ button{
   .past .galery .container.small{
     width:45%; 
   }
-  
+}
 
+@media (min-width: 1024px){
+  
+  
 }
 .clearfix::after {
   content: "";
