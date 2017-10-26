@@ -35,6 +35,12 @@
 .right{text-align: right;}
 .center{text-align: center;}
 
+input::-moz-placeholder { color: #bebebe; font-size: 15px; font-family: sans-serif;}
+input::-webkit-input-placeholder { color: #bebebe;font-size: 15px; font-family: sans-serif;}
+textarea::-webkit-input-placeholder { color: #bebebe; font-size: 15px; font-family: sans-serif;}
+textarea::-moz-placeholder { color: #bebebe; font-size: 15px; font-family: sans-serif;}
+textarea{resize:none;}
+
 .header{
   box-sizing: border-box;
   width:100%;
@@ -152,14 +158,12 @@ form.signup .title{
   margin: 10px 0;
 }
 form.signup input{
-  
   display: block;
   width: 100%;
   height: 40px;
   border: 1px solid #bebebe;
   border-radius: 5px;
   margin: 15px 0;
-  color: #bebebe;
   padding: 0 10px;
   font-size: 15px;  
 }
@@ -183,8 +187,6 @@ form.signup .text{
   width: 90%;  
 }
 
-form.signup input::-moz-placeholder { color: #bebebe; }
-form.signup input::-webkit-input-placeholder { color: #bebebe; }
 
 /*END FORM------------------------------------------------------*/
 
@@ -457,6 +459,57 @@ button{
   margin: 0 auto;
 }
 
+/*END PAST----------------------------------*/
+
+.map{
+  background-image: url(img/map.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0;
+  margin: 40px 0;
+}
+.content{
+  background: white;
+  padding: 50px 20px; 
+}
+.map .view img{
+  width: 100%;
+  height: auto;
+}
+.view button{
+  display: block;
+  margin: 30px auto 0;
+}
+.view .text{
+  margin: 30px 0;
+  font-size: 15px; 
+}
+.map .content input{  
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 0 10px;
+  font-size: 15px;  
+}
+.map .content textarea{
+  height: 200px;
+  display: block;
+  width: 100%;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px 10px;
+  font-size: 15px;  
+}
+.map .content button.message{
+  width: 100%;
+  background-color: #373737;
+  border-radius: 5px;
+}
+
 /*MEDIA---------------------------------------------------------
 ----------------------------------------------------------------
 ----------------------------------------------------------------*/
@@ -522,7 +575,17 @@ button{
   .past .galery .container.small{
     width:45%; 
   }
+  .map .view{
+    width:45%;
+    float:left;
+  }
+  .map .form-send{
+    float:right;
+    width:45%;
+  }
+  
 }
+
 
 @media (min-width: 1024px){
   
