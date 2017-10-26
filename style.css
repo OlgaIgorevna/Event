@@ -793,7 +793,9 @@ button{
     width: 120px;
   }
   .time .content{width: 500px;}
+  
   .block:last-child, .block .numeral:last-child{margin-right:0;}
+  
   .block .numeral{
     font-size: 35px;
     margin-right: 20px;
@@ -803,16 +805,10 @@ button{
     margin-right: 20px;
   }
   
-  
   .reward{margin-top: 200px;}
-  .reward-badge{
-    display:block;
-    position: absolute;
-    width:30%;
-    height: auto;
+  .reward-badge{    
     top: -130px;
     left: 10px;
-    z-index: 6;
   }
   .wrap:before {      
     top: 120px;
@@ -829,9 +825,56 @@ button{
   
 }
 
-@media (min-width: 1442px){
-  .big-screen{ padding: 0 10%;}
+@media (min-width: 1440px){
   
+  .big-screen{     
+    padding: 0 15%; 
+    position: relative;
+  }
+  form.signup{
+    max-width: 400px;
+    right: 15%;
+    width: 35%;   
+  }
+  
+   .header:after{
+    height: 200px;
+    bottom: -30px;
+  }
+  
+  .badges {    
+    margin-bottom: 20px;
+  }
+  
+  .reward-badge{
+    top: -250px;
+    left: 15%;    
+  }
+  
+  .wrap:before{   
+    top: 0px;
+    height: 150px;
+  }
+  .wrap:after{
+    height: 150px;
+    bottom: 20px;
+  }
+  .reward{
+    padding: 200px 0;
+    margin-top: 100px;
+  }
+
+  .sponsor{
+    padding: 150px 0;
+  }
+  .wrap.sp:before{   
+    top: -100px;
+    height: 150px;
+  }
+   .wrap.sp:after{   
+    bottom: 0px;
+    height: 150px;
+  }    
 }
 
 
