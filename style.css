@@ -18,6 +18,7 @@
 
 .layout-positioner{
   padding: 0 10px; 
+  position: relative;
 }
 .title{
   font-size: 30px;
@@ -46,7 +47,7 @@ textarea{resize:none;}
   width:100%;
   height: 150px;
   background: url("img/hero-bg.jpg") no-repeat;
-  background-size: cover; /*как сместить background при том, что надо еще картинку увеличить и чтобы только ее часть была на экране?*/  
+  background-size: cover;
   background-position: center;
   padding: 5px 0 0;     
   position: relative;
@@ -76,6 +77,8 @@ textarea{resize:none;}
     font-size: 20px;
     color: white;
 }
+.menu{display: none;}
+
 .header .layout{
   width:100%;
   padding:10px 10px 0;
@@ -116,12 +119,8 @@ textarea{resize:none;}
 
 }
 .badges{
-  margin-top: 20px;
-/*
-  position: absolute;
-  bottom: -5px;
-  left: 25px;
-*/
+  margin: 20px auto 0;
+  width: 250px;
 }
 .badges img{
   width: 40px;
@@ -289,11 +288,10 @@ form.signup .text{
   background: url(img/reward-bg-h.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 130px 0;
   box-sizing: border-box;
   position: relative;
 }
-
 
 .reward .text{
   font-weight: 600;
@@ -301,6 +299,9 @@ form.signup .text{
 .reward p{
   margin: 20px 0;
 }
+
+.reward-badge{display: none;}
+
 button{
   background-color: #90d23d;
   color: white;
@@ -352,7 +353,7 @@ button{
   content: " ";
   position: absolute;
   width: 200%;
-  height: 70px;
+  height: 90px;
   top: -30px;
   left: -10px;
   background: white;
@@ -363,8 +364,8 @@ button{
   content: " ";
   position: absolute;
   width: 200%;
-  height: 70px;
-  bottom: 10px;
+  height: 90px;
+  bottom: 30px;
   left: -10px;
   background: white;
   transform: rotate(-3deg);
@@ -432,14 +433,15 @@ button{
 	 border-left: 1000px solid transparent;			
 }
 */
-.sponsor .badges img{
+.sponsor .sponsor-badges{margin-top: 20px;}
+.sponsor .sponsor-badges img{
   display: inline-block;
   height: 30px;
   width:auto;
   margin: 0 10px 0 0;
 }
-.sponsor .badges img:last-child{height:15px;}
-.sponsor .badges {text-align: center;}
+.sponsor .sponsor-badges img:last-child{height:15px;}
+.sponsor .sponsor-badges {text-align: center;}
 
 /*END SPONSOR---------------------------------------------------*/
 
@@ -468,7 +470,7 @@ button{
   padding: 70px 0;
   margin: 40px 0 0;
 }
-.content{
+.map .content{
   background: white;
   padding: 50px 20px; 
 }
@@ -533,11 +535,136 @@ button{
   left:0;  
 }
 .footer .text{color:white; font-weight: 700; font-size: 15px;}
-/*MEDIA---------------------------------------------------------
-----------------------------------------------------------------
-----------------------------------------------------------------*/
+
+/*MEDIA------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 768px){
+  
+/*header---------------------------*/
+  .header{ height: 400px;}
+  .header .layout-positioner{height:400px;}
+  
+  form.signup{
+    position:absolute;
+    top: -200px;
+    right: 10px;
+    background: white;
+    width: 35%;
+    z-index: 6;
+  }
+  
+  .welcome{
+    width: 50%;
+  }
+  .badges {
+    width: 425px;
+    height: 100px;
+    margin-bottom: 0;
+    margin-top: 110px;
+    transform: rotate(-5deg);
+    position: absolute;
+    left:0;
+    bottom: 50px;
+  }
+  
+  .badges img{
+    width: 100px;
+    height:auto;
+    margin: 0 0 0 -20px;  
+    float:right;
+  }
+  
+  .header:after {
+    content: " ";
+    position: absolute;
+    width: 200%;
+    height: 120px;
+    bottom: 0px;
+    left: -10px;
+    background: white;
+    transform: rotate(-5deg);
+    z-index: 5;
+  }
+  
+  .header .layout{
+  width:100%;
+  padding:10px 10px 0;
+  box-sizing: border-box;
+  clear:both;
+  text-align: center;
+  }
+  
+  .time .content{margin:0 auto; width: 50%;}
+
+  .time{height: 70px; margin-top: 30px;}
+
+  .time .block{
+    display: block; 
+    float:left;
+    width: 20%;  
+    font-size: 15px;
+    margin-right:10px;
+  }
+
+  .block .numeral{
+    font-size: 25px;
+    display: block;
+    margin-right:10px;
+  }
+  .t{
+    font-size: 30px;
+    display: block;
+    float:left;
+    margin-right: 10px;
+  }
+  
+  .menu-button{display:none;}
+  .menu{
+    display:block;
+    float:right;
+    color:white;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 10px 10px 0;
+  }
+  .menu li{
+    display: block;
+    float:right;
+    margin-left:30px;
+  }
+  .logo{margin:10px 0 0 10px;}
+  
+/*end header--------------------------------------*/  
+  
+  .timetable .text{
+    margin: 0 auto;
+    width: 80%;
+  }
+/*reward--------------------------------*/
+  .reward{margin-top: 200px;}
+  .reward-badge{
+    display:block;
+    position: absolute;
+    width:30%;
+    height: auto;
+    top: -130px;
+    left: 10px;
+    z-index: 6;
+  }
+  .wrap:before {  
+    width: 200%;
+    top: 140px;
+    left: -10px;
+  }
+  .reward .text{width:50%;float:right; }
+  
+  .reward button{float:right;clear:right;}
+  
+  /*end reward-----------------------------*/
+  
+  /*speakers-------------------------------*/
   .speakers .galery .container{
     float:left;
     width:33%;  
@@ -552,6 +679,10 @@ button{
     width: 70%;
   } 
   
+  /*end speakers---------------------------*/
+  
+  /*details icons--------------------------*/
+  
   .details-icons .container{                             
         width:33%;
         padding: 0 20px;
@@ -564,9 +695,18 @@ button{
   .details-icons .container .icon img{
      margin-bottom: 10px;
   }
+  
+  /*end details icons----------------------*/
+  
+  
   .table{
     width:100%;   
   }   
+  
+/*past events------------------------------*/
+  .wrap.sp::before {      
+    top:-20px;
+  }
   
   .past .text, .past .title{text-align: left;}  
   .past .text{width:50%;}
@@ -598,6 +738,11 @@ button{
   .past .galery .container.small{
     width:45%; 
   }
+  
+  /*end past events------------------------*/
+  
+  /*map------------------------------------*/
+  
   .map .view{
     width:45%;
     float:left;
@@ -606,14 +751,91 @@ button{
     float:right;
     width:45%;
   }
+/*end map----------------------------------*/
   
 }
-
+/*end media 768------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------*/
 
 @media (min-width: 1024px){
   
+  .header{ height: 550px;}
+  .header .layout-positioner{height:550px;}
+  
+  .welcome{
+    width: 50%;
+  }
+  .badges {
+    width: 520px;
+    height: 100px;
+    margin-bottom: 0;
+    margin-top: 110px;
+    left: 5px;
+    bottom: 50px;
+  }
+  
+  .badges img{
+    width: 120px;
+    margin: 0 0 0 -20px; 
+  }
+  
+  .header:after {    
+    height: 120px;
+    bottom: 0px;
+  }
+  
+  .time{height: 100px; margin-top: 60px;}
+
+  .time .block{     
+    font-size: 25px;
+    margin-right: 30px;
+    width: 120px;
+  }
+  .time .content{width: 500px;}
+  .block:last-child, .block .numeral:last-child{margin-right:0;}
+  .block .numeral{
+    font-size: 35px;
+    margin-right: 20px;
+  }
+  .t{
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  
+  
+  .reward{margin-top: 200px;}
+  .reward-badge{
+    display:block;
+    position: absolute;
+    width:30%;
+    height: auto;
+    top: -130px;
+    left: 10px;
+    z-index: 6;
+  }
+  .wrap:before {      
+    top: 120px;
+  }
+  .wrap:after{
+    height: 90px;
+    bottom: 30px;
+  }
+  .wrap.sp::before {      
+    top:-40px;
+  }
+  
+  
   
 }
+
+@media (min-width: 1442px){
+  .big-screen{ padding: 0 10%;}
+  
+}
+
+
+
 .clearfix::after {
   content: "";
   display: table;
