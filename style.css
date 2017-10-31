@@ -552,6 +552,7 @@ form.signup .text{
   background: #90d23d;
   text-align: center;
   padding: 30px 0;
+  position: relative;
 }
 
 .crop{
@@ -569,9 +570,22 @@ form.signup .text{
 }
 .footer .text{color:white; font-weight: 700; font-size: 15px;}
 
+
+.footer a{
+  position:absolute;
+  right: 0;
+  top: 100px;
+}
+
+
 /*MEDIA------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------*/
+@media(min-width: 425px) {
+  .footer a{
+    right: 30px;
+  }
+}
 
 @media (min-width: 768px){
   
